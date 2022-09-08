@@ -1,3 +1,9 @@
 // Uniquement des imports 
 @import "./Utils/variables";
-@import "./Base/header.scss";
+@import "./Base/base";
+@import "./Base/header";
+@import "./Base/localisation";
+@import "./Base/presentation";
+@import "./Base/fonctionnement";
+@import "Components/button";
+@import "Base/footer";

@@ -1,0 +1,20 @@
+#section_localisation{
+    width: 100%;
+    height: auto;
+    background-color: #eaeaea;
+    border-top: 2px solid #c3c3c3;
+
+        .localisation{
+            display: flex;
+            font-family: $texte;
+            font-size: 40px;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+
+            i{
+                padding-right: 50px;
+            }
+        }
+}

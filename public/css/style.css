@@ -1,5 +1,107 @@
-h1 {
-  color: red;
+/* Elements principaux */
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#Logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#Logo img {
+  width: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#section_localisation {
+  width: 100%;
+  height: auto;
+  background-color: #eaeaea;
+  border-top: 2px solid #c3c3c3;
+}
+#section_localisation .localisation {
+  display: flex;
+  font-family: Roboto, "Comic Sans MS", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+#section_localisation .localisation i {
+  padding-right: 50px;
+}
+
+#section_presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 500px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#section_presentation .presentation h1 {
+  font-family: Roboto, "Comic Sans MS", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+#section_presentation .presentation p {
+  font-family: Roboto, "Comic Sans MS", Arial, sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+#section_presentation .presentation_explorations {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-radius: 100px;
+  font-family: Roboto, "Comic Sans MS", Arial, sans-serif;
+  font-size: 40px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 5px;
+}
+
+#section_fonctionnement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+#section_fonctionnement h1 {
+  font-family: Roboto, "Comic Sans MS", Arial, sans-serif;
+  font-size: 40px;
+}
+#section_fonctionnement .fonctionnement {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, "Comic Sans MS", Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 10%;
+  font-size: 30px;
+  padding: 15px 0 15px 0;
+  border-radius: 50px;
+  box-shadow: 15px 15px 25px #e5e5e5;
+}
+#section_fonctionnement .fonctionnement:hover {
+  background-color: #f5edff;
+}
+#section_fonctionnement .fonctionnement:hover i {
+  color: #9356DC;
+}
+#section_fonctionnement i {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 40px;
+  font-size: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
