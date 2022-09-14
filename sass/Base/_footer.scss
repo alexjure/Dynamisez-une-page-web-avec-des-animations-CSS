@@ -1,0 +1,26 @@
+footer{
+    background: #363636;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 30px 20px;
+
+    h1{
+        color: white;
+        font-family: $secondary-font;
+        font-size: 15px;
+        padding: 10px 0 10px 0;
+    }
+
+    a{
+        color: white;
+        padding-bottom: 10px;
+
+        i{
+            width: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+
+}
