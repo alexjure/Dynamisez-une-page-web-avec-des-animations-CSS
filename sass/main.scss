@@ -1,7 +1,9 @@
 // Uniquement des imports 
 @import "./Utils/variables";
+@import "./Base/mixin";
 @import "./Base/base";
 @import "./Base/header";
-@import "Components/button";
+@import "./Components/button";
 @import "./Base/footer";
-@import "./Layout/page-home"
+@import "./Layout/page-home";
+

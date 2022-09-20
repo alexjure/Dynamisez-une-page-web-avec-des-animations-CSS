@@ -1,0 +1,16 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    background: linear-gradient($secondary-color, $primary-color);
+    padding: 20px 0 20px 0;
+
+    @include tablette{
+        width: 30%;
+    }
+    
+}

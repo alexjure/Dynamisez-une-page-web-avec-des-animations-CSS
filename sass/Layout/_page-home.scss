@@ -3,15 +3,26 @@
     height: auto;
     background-color: #eaeaea;
     border-top: 2px solid #c3c3c3;
+    
 
         .localisation{
             display: flex;
             justify-content: center;
             align-items: center;
-            font-weight: 700;
-
-            i{
-                padding-right: 20px;
+            width: 100%;
+            margin-left: 15px;
+            
+            form{
+                input{
+                    border: none;
+                    background-color: #eaeaea;
+                    padding: 4px 0px 4px 15px;
+                    margin: 5px 0 5px 0;
+                }
+                ::placeholder{
+                    color: #000000;
+                    font-size: 15px;
+                }
             }
         }
 }
@@ -25,6 +36,10 @@
     height: 230px;
     padding-top: 20px;
     padding-bottom: 30px;
+
+    @include tablette{
+        height: 200px;
+    }
     
 
     .presentation{
@@ -33,6 +48,10 @@
         flex-direction: column;
         align-items: center;
 
+        @include tablette{
+            width: 40%;
+        }
+
         h1{
             width: 70%;
             height: auto;
@@ -40,26 +59,21 @@
             font-weight: 700;
             text-align: center;
             margin-bottom: 10px;
+
+            @include tablette{
+                width: 100%;
+                margin-bottom: 0;
+            }
         }
         p{
             text-align: center;
             color: #9E9E9E;
-        
+            
         }
-    }
 
-
-    .presentationExplorations{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        width: 70%;
-        border-radius: 100px;
-        color: white;
-        background: linear-gradient($secondary-color, $primary-color);
-        padding: 5px;
         
     }
+
 }
 
 #sectionFonctionnement{
@@ -69,10 +83,23 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding: 30px 0 35px 0;
+
     
+    @include tablette{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
     h1{
        margin-left: -125px;
+
+       @include tablette{
+        margin: 15px 0 15px 0;
+        width: 100%;
+        text-align: center;
+       }
     }
     
     .fonctionnement{
@@ -85,12 +112,24 @@
         border-radius: 25px;
         box-shadow: 15px 15px 15px #e5e5e5;
         background-color: #f6f6f6;
-        
+
+        @include tablette{
+            margin: 0;
+            width: 25%;
+            height: 100px;
+            align-items: center;
+
+        }
 
         .numero{
             display: flex;
             justify-content: flex-start;
             align-items: center;
+
+            @include tablette {
+                position: relative;
+                top: -65%; left: 50%;
+            }
         }
 
         span{
@@ -103,6 +142,8 @@
             border-radius: 50%;
             padding: 4px 8px 4px 8px;
             color: white;
+
+            
         }
 
         .icone{
@@ -110,9 +151,20 @@
             justify-content: flex-start;
             align-items: center;
             padding-right: 20px;
+
+            @include tablette{
+                padding: 0;
+            }
+            
         }
         
-        
+        h2{
+            @include tablette{
+                padding-left: 0px;
+                margin: 0px;
+                
+            }
+        }
 
         &:hover{
             background-color: #f5edff;
@@ -178,11 +230,12 @@
         h2{
             padding: 15px 0 0 10px;
             margin: 0;
+            font-weight: bold;
         }
 
         p{
 
-            padding: 5px 0 10px 10px;
+            padding: 5px 0 15px 10px;
             margin: 0;
             
         }
@@ -192,6 +245,7 @@
             position: absolute;
             font-size: 25px;
             top: 77%; left: 85%;
+            
         }
 
         .nouveau{
