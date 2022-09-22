@@ -6,6 +6,11 @@
             width: 50%;
             padding-top: 2%;
             padding-bottom: 2%;
-    
+            @include tablette{
+                width: 30%;
+            }
+            @include desktop{
+                width: 25%;
+            }
         }
 }

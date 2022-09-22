@@ -4,21 +4,25 @@
     background-color: #eaeaea;
     border-top: 2px solid #c3c3c3;
     
-
         .localisation{
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            margin-left: 15px;
+            @include tablette{
+                margin-left: 0;
+            }
             
             form{
+                margin-left: 30px;
+
                 input{
                     border: none;
                     background-color: #eaeaea;
                     padding: 4px 0px 4px 15px;
                     margin: 5px 0 5px 0;
                 }
+
                 ::placeholder{
                     color: #000000;
                     font-size: 15px;
@@ -40,16 +44,18 @@
     @include tablette{
         height: 200px;
     }
-    
 
     .presentation{
-
         display: flex;
         flex-direction: column;
         align-items: center;
 
         @include tablette{
             width: 40%;
+        }
+
+        @include desktop{
+            width: 20%;
         }
 
         h1{
@@ -65,19 +71,15 @@
                 margin-bottom: 0;
             }
         }
+
         p{
             text-align: center;
-            color: #9E9E9E;
-            
+            color: #9E9E9E; 
         }
-
-        
     }
-
 }
 
 #sectionFonctionnement{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,21 +87,28 @@
     width: 100%;
     padding: 30px 0 35px 0;
 
+    &:hover{
+        cursor: pointer;
+    }
     
-    @include tablette{
+    @include desktop{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        height: 190px;
     }
-
+    
     h1{
        margin-left: -125px;
 
-       @include tablette{
-        margin: 15px 0 15px 0;
-        width: 100%;
-        text-align: center;
-       }
+        @include tablette{
+            margin: 10px 0 20px 0;
+        }
+
+        @include desktop{
+            width: 100%;
+            text-align: center;
+        }
     }
     
     .fonctionnement{
@@ -114,22 +123,20 @@
         background-color: #f6f6f6;
 
         @include tablette{
-            margin: 0;
-            width: 25%;
-            height: 100px;
-            align-items: center;
+            width: 60%;
+            margin: 0 0 5% 20px;
+        }
 
+        @include desktop{
+            width: 20%;
+            height: 75px;
+            align-items: center;
         }
 
         .numero{
             display: flex;
             justify-content: flex-start;
             align-items: center;
-
-            @include tablette {
-                position: relative;
-                top: -65%; left: 50%;
-            }
         }
 
         span{
@@ -142,8 +149,6 @@
             border-radius: 50%;
             padding: 4px 8px 4px 8px;
             color: white;
-
-            
         }
 
         .icone{
@@ -151,19 +156,6 @@
             justify-content: flex-start;
             align-items: center;
             padding-right: 20px;
-
-            @include tablette{
-                padding: 0;
-            }
-            
-        }
-        
-        h2{
-            @include tablette{
-                padding-left: 0px;
-                margin: 0px;
-                
-            }
         }
 
         &:hover{
@@ -172,8 +164,7 @@
                 color: #9356DC;
             }
         }
-    }
-    
+    } 
 }
 
 #sectionRestaurant{
@@ -185,9 +176,24 @@
     background-color: #f6f6f6;
     padding: 30px 0 40px 0;;
 
+    @include desktop{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
     h1{
         position: relative;    
         top: 0; left: -85px;
+
+        @include tablette{
+            left: 0;
+        }
+
+        @include desktop{
+            width: 100%;
+            text-align: center;
+        }
     }
 
     .restaurant{
@@ -199,16 +205,23 @@
         position: relative;
         background-color: white;
         border-radius: 20px;
+        
+        @include desktop{
+            width: 20%;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
 
         a{
             width: 100%;
+            
         }
 
         .restaurant__cadre{
             width: 100%;
             height: 150px; 
              
-
             .restaurant__image{
                 width: 100%;
                 height: 100%;
@@ -217,7 +230,6 @@
                 border-radius: 20px 20px 0 0;  
             }
             
-
             .restaurant__imagePortrait{
                 width: 100%;
                 height: 100%;
@@ -234,10 +246,8 @@
         }
 
         p{
-
             padding: 5px 0 15px 10px;
             margin: 0;
-            
         }
 
         .restaurant__coeur{
@@ -245,7 +255,6 @@
             position: absolute;
             font-size: 25px;
             top: 77%; left: 85%;
-            
         }
 
         .nouveau{
@@ -258,10 +267,7 @@
             padding: 5px;
             border-radius: 4px;
             position: absolute;
-            top: 10px; left: 200px;
+            top: 4%; right: 5%;
         }
-    
-    }
-
-   
+    }  
 }

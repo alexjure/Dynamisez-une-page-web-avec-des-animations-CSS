@@ -4,13 +4,24 @@
     text-align: center;
     width: 70%;
     border: none;
-    border-radius: 100px;
+    border-radius: 50px;
     color: white;
     background: linear-gradient($secondary-color, $primary-color);
     padding: 20px 0 20px 0;
+    box-shadow: 3px 3px 10px #b3b3b3;
+    
+    &:hover{
+        background: linear-gradient(#FF9EE4, #A15DF2);
+        box-shadow: 3px 3px 10px #7a7a7a;
+        cursor: pointer;
+    }
 
     @include tablette{
         width: 30%;
+    }
+    @include desktop
+    {
+        width: 20%;
     }
     
 }
