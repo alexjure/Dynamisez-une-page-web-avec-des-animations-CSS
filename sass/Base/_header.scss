@@ -4,7 +4,7 @@
     justify-content: center;
         img{
             width: 50%;
-            padding-top: 2%;
+            padding-top: 4%;
             padding-bottom: 2%;
             @include tablette{
                 width: 30%;
@@ -13,4 +13,14 @@
                 width: 25%;
             }
         }
+}
+
+.retour{
+    display: flex;
+    position: absolute;
+    top: 3%;
+    padding-left: 20px;
+    i{
+        font-size: 20px;
+    }
 }

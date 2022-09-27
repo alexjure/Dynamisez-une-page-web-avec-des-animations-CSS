@@ -3,12 +3,6 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 0 0 30px 20px;
-
-    @include desktop{
-        align-items: center;
-        padding: 0 0 15px 0;
-        
-    }
     
     h1{
         color: white;
