@@ -1,0 +1,163 @@
+#imageFond{
+    position: relative;
+    z-index: 1;
+    
+    img{
+        width: 100%;
+        
+    }
+
+}
+
+#menu{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4% 8% 4%;
+    background-color: #f6f6f6;
+    margin-top: -60px;
+    border-radius: 25px 25px 0 0;
+    
+        #titreMenu{
+            display: flex;
+            align-items: center;
+            padding-top: 15px;
+
+                h1{
+                    font-family: $secondary-font;
+                }
+
+                i{
+                    font-size: 25px;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 20px;
+
+                }
+        }
+        
+        h2{
+            padding-bottom: 1px;
+            margin-right: 265px;
+            border-bottom: 2px solid $tertiary-color;
+        }
+        
+        .entrees{
+            display: flex;
+            flex-direction: column;
+            
+            .carteEntrees{
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                box-shadow: 10px 10px 10px #e5e5e5;
+                height: auto;
+                margin-bottom: 10%;
+                padding: 10px;
+                border-radius: 15px;
+
+                h3{
+                    margin: 0 0 8px 0;
+                    font-size: 15px;
+                }
+
+                .entreesTexte{
+                    display: flex;
+                    
+                    p{
+                        margin: 0;
+                        font-size: 12px;
+                    }
+
+                    span{
+                        position: absolute;
+                        right: 0;
+                        font-weight: bold;
+                        margin-right: 35px;
+                    }
+                }
+            }
+        }
+
+        .plats{
+            display: flex;
+            flex-direction: column;
+            
+            .cartePlats{
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                box-shadow: 10px 10px 10px #e5e5e5;
+                height: auto;
+                margin-bottom: 10%;
+                padding: 10px;
+                border-radius: 15px;
+
+                h3{
+                    margin: 0 0 8px 0;
+                    font-size: 15px;
+                }
+
+                .platsTexte{
+                    display: flex;
+                    
+                    p{
+                        margin: 0;
+                        font-size: 12px;
+                    }
+
+                    span{
+                        position: absolute;
+                        right: 0;
+                        font-weight: bold;
+                        margin-right: 35px;
+                    }
+                }
+            }
+        }
+    
+        .desserts{
+            display: flex;
+            flex-direction: column;
+            
+            .carteDesserts{
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                box-shadow: 10px 10px 10px #e5e5e5;
+                height: auto;
+                margin-bottom: 10%;
+                padding: 10px;
+                border-radius: 15px;
+
+                h3{
+                    margin: 0 0 8px 0;
+                    font-size: 15px;
+                }
+
+                .dessertsTexte{
+                    display: flex;
+                    
+                    p{
+                        margin: 0;
+                        font-size: 12px;
+                    }
+
+                    span{
+                        position: absolute;
+                        right: 0;
+                        font-weight: bold;
+                        margin-right: 35px;
+                    }
+                }
+            }
+        }
+        
+    .bouton{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+}

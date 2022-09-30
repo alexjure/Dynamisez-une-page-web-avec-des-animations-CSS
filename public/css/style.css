@@ -45,9 +45,8 @@ a {
 }
 
 .retour {
-  display: flex;
   position: absolute;
-  top: 3%;
+  top: 4%;
   padding-left: 20px;
 }
 .retour i {
@@ -373,6 +372,142 @@ footer a i {
   position: absolute;
   top: 4%;
   right: 5%;
+}
+
+#imageFond {
+  position: relative;
+  z-index: 1;
+}
+#imageFond img {
+  width: 100%;
+}
+
+#menu {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0 4% 8% 4%;
+  background-color: #f6f6f6;
+  margin-top: -60px;
+  border-radius: 25px 25px 0 0;
+}
+#menu #titreMenu {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+#menu #titreMenu h1 {
+  font-family: Shrikhand, Arial, sans-serif;
+}
+#menu #titreMenu i {
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+#menu h2 {
+  padding-bottom: 1px;
+  margin-right: 265px;
+  border-bottom: 2px solid #99E2D0;
+}
+#menu .entrees {
+  display: flex;
+  flex-direction: column;
+}
+#menu .entrees .carteEntrees {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 10px 10px 10px #e5e5e5;
+  height: auto;
+  margin-bottom: 10%;
+  padding: 10px;
+  border-radius: 15px;
+}
+#menu .entrees .carteEntrees h3 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+}
+#menu .entrees .carteEntrees .entreesTexte {
+  display: flex;
+}
+#menu .entrees .carteEntrees .entreesTexte p {
+  margin: 0;
+  font-size: 12px;
+}
+#menu .entrees .carteEntrees .entreesTexte span {
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+  margin-right: 35px;
+}
+#menu .plats {
+  display: flex;
+  flex-direction: column;
+}
+#menu .plats .cartePlats {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 10px 10px 10px #e5e5e5;
+  height: auto;
+  margin-bottom: 10%;
+  padding: 10px;
+  border-radius: 15px;
+}
+#menu .plats .cartePlats h3 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+}
+#menu .plats .cartePlats .platsTexte {
+  display: flex;
+}
+#menu .plats .cartePlats .platsTexte p {
+  margin: 0;
+  font-size: 12px;
+}
+#menu .plats .cartePlats .platsTexte span {
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+  margin-right: 35px;
+}
+#menu .desserts {
+  display: flex;
+  flex-direction: column;
+}
+#menu .desserts .carteDesserts {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 10px 10px 10px #e5e5e5;
+  height: auto;
+  margin-bottom: 10%;
+  padding: 10px;
+  border-radius: 15px;
+}
+#menu .desserts .carteDesserts h3 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+}
+#menu .desserts .carteDesserts .dessertsTexte {
+  display: flex;
+}
+#menu .desserts .carteDesserts .dessertsTexte p {
+  margin: 0;
+  font-size: 12px;
+}
+#menu .desserts .carteDesserts .dessertsTexte span {
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+  margin-right: 35px;
+}
+#menu .bouton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
