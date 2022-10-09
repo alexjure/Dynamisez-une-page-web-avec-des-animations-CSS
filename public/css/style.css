@@ -58,28 +58,19 @@ header #retour i {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 50%;
+  width: 185px;
   border: none;
   border-radius: 50px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
-  padding: 10px 0 10px 0;
+  padding: 15px 5px 15px 5px;
   box-shadow: 3px 3px 10px #b3b3b3;
+  font-size: 14px;
   cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(#FF9EE4, #A15DF2);
   box-shadow: 3px 3px 10px #7a7a7a;
-}
-@media (min-width: 768px) {
-  .btn {
-    width: 30%;
-  }
-}
-@media (min-width: 1024px) {
-  .btn {
-    width: 20%;
-  }
 }
 
 footer {
@@ -88,7 +79,7 @@ footer {
   flex-direction: column;
   padding: 0 0 30px 20px;
 }
-footer h1 {
+footer h3 {
   color: white;
   font-family: Shrikhand, Arial, sans-serif;
   font-size: 15px;
@@ -393,11 +384,25 @@ footer a i {
   margin-top: -60px;
   border-radius: 25px 25px 0 0;
 }
+@media (min-width: 768px) {
+  #menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 4% 4% 4%;
+    margin-top: -270px;
+  }
+}
 #menu #titreMenu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 15px;
+}
+@media (min-width: 768px) {
+  #menu #titreMenu {
+    width: 100%;
+  }
 }
 #menu #titreMenu h1 {
   font-family: Shrikhand, Arial, sans-serif;
@@ -418,6 +423,36 @@ footer a i {
   margin-top: -10px;
   margin-left: 0;
 }
+@media (min-width: 768px) {
+  #menu .entrees {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  #menu .entrees {
+    width: 32%;
+  }
+}
+@media (min-width: 768px) {
+  #menu .plats {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  #menu .plats {
+    width: 32%;
+  }
+}
+@media (min-width: 768px) {
+  #menu .desserts {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  #menu .desserts {
+    width: 32%;
+  }
+}
 #menu .cartes {
   display: flex;
   flex-direction: column;
@@ -427,13 +462,19 @@ footer a i {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 15px;
+  cursor: pointer;
 }
 #menu .cartes h3 {
   margin: 0 0 8px 0;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #menu .cartes .Texte {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 #menu .cartes .Texte p {
   margin: 0;
@@ -443,15 +484,25 @@ footer a i {
   text-overflow: ellipsis;
 }
 #menu .cartes .Texte span {
-  position: absolute;
-  right: 0;
+  align-items: flex-end;
   font-weight: bold;
-  margin-right: 35px;
+  margin-right: 15px;
 }
 #menu .bouton {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin: 20px 0 15px 0;
+}
+@media (min-width: 768px) {
+  #menu .bouton {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #menu .bouton {
+    margin-top: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

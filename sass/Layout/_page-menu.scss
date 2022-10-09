@@ -17,13 +17,24 @@
     background-color: #f6f6f6;
     margin-top: -60px;
     border-radius: 25px 25px 0 0;
-    
+
+    @include tablette{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 4% 4% 4%;
+        margin-top: -270px;
+    }
+
         #titreMenu{
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding-top: 15px;
 
+            @include tablette{
+                width: 100%;
+            }
                 h1{
                     font-family: $secondary-font;
                 }
@@ -36,7 +47,7 @@
         
         h2{
             padding-bottom: 1px;
-            margin-right: 265px;
+            margin-right: 265px;    
         }
 
         hr{
@@ -45,10 +56,39 @@
             border: none;
             background-color: $tertiary-color;
             margin-top: -10px;
-            margin-left: 0;
-            
+            margin-left: 0;   
         }
         
+        .entrees{
+            @include tablette{
+                width: 30%;
+            }
+
+            @include desktop{
+                width: 32%;
+            }
+        }
+        
+        .plats{
+            @include tablette{
+                width: 30%;
+            }
+
+            @include desktop{
+                width: 32%;
+            }
+        }
+
+        .desserts{
+            @include tablette{
+                width: 30%;
+            }
+
+            @include desktop{
+                width: 32%;
+            }
+        }
+
         .cartes{
             display: flex;
             flex-direction: column;
@@ -57,16 +97,21 @@
             height: auto;
             margin-bottom: 10px;
             padding: 10px;
-            border-radius: 15px;
+            border-radius: 15px;          
+            cursor: pointer;
         
             h3{
                 margin: 0 0 8px 0;
                 font-size: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         
             .Texte{
                 display: flex;
-                
+                width: 100%;
+                justify-content: space-between;
                 
                 p{
                     margin: 0;
@@ -77,10 +122,9 @@
                 }
         
                 span{
-                    position: absolute;
-                    right: 0;
+                    align-items: flex-end;
                     font-weight: bold;
-                    margin-right: 35px;
+                    margin-right: 15px;
                 }
             }
         }
@@ -89,6 +133,15 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        margin: 20px 0 15px 0;
+
+        @include tablette{
+            margin-top: 20px;
+        }
+
+        @include desktop{
+            margin-top: 40px;
+        }
     }
 
 }
