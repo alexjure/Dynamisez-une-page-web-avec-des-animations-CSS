@@ -96,38 +96,38 @@ footer a i {
   margin: 0;
 }
 
-#sectionLocalisation {
+.sectionLocalisation {
   width: 100%;
   height: auto;
   background-color: #eaeaea;
   border-top: 2px solid #c3c3c3;
 }
-#sectionLocalisation .localisation {
+.sectionLocalisation__localisation {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 @media (min-width: 768px) {
-  #sectionLocalisation .localisation {
+  .sectionLocalisation__localisation {
     margin-left: 0;
   }
 }
-#sectionLocalisation .localisation form {
+.sectionLocalisation__localisation form {
   margin-left: 30px;
 }
-#sectionLocalisation .localisation form input {
+.sectionLocalisation__localisation form input {
   border: none;
   background-color: #eaeaea;
   padding: 4px 0px 4px 15px;
   margin: 5px 0 5px 0;
 }
-#sectionLocalisation .localisation form ::placeholder {
+.sectionLocalisation__localisation form ::placeholder {
   color: #000000;
   font-size: 15px;
 }
 
-#sectionPresentation {
+.sectionPresentation {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,26 +138,26 @@ footer a i {
   padding-bottom: 30px;
 }
 @media (min-width: 768px) {
-  #sectionPresentation {
+  .sectionPresentation {
     height: 200px;
   }
 }
-#sectionPresentation .presentation {
+.sectionPresentation__presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 768px) {
-  #sectionPresentation .presentation {
+  .sectionPresentation__presentation {
     width: 40%;
   }
 }
 @media (min-width: 1024px) {
-  #sectionPresentation .presentation {
+  .sectionPresentation__presentation {
     width: 100%;
   }
 }
-#sectionPresentation .presentation h1 {
+.sectionPresentation__presentation h1 {
   width: 70%;
   height: auto;
   justify-content: center;
@@ -166,17 +166,17 @@ footer a i {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  #sectionPresentation .presentation h1 {
+  .sectionPresentation__presentation h1 {
     width: 100%;
     margin-bottom: 0;
   }
 }
-#sectionPresentation .presentation p {
+.sectionPresentation__presentation p {
   text-align: center;
   color: #9E9E9E;
 }
 
-#sectionFonctionnement {
+.sectionFonctionnement {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,33 +184,33 @@ footer a i {
   width: 100%;
   padding: 30px 0 35px 0;
 }
-#sectionFonctionnement:hover {
+.sectionFonctionnement:hover {
   cursor: pointer;
 }
 @media (min-width: 1024px) {
-  #sectionFonctionnement {
+  .sectionFonctionnement {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     height: 190px;
   }
 }
-#sectionFonctionnement h1 {
+.sectionFonctionnement h1 {
   margin-left: -125px;
 }
 @media (min-width: 768px) {
-  #sectionFonctionnement h1 {
+  .sectionFonctionnement h1 {
     margin: 10px 0 20px 0;
   }
 }
 @media (min-width: 1024px) {
-  #sectionFonctionnement h1 {
+  .sectionFonctionnement h1 {
     width: 100%;
     text-align: left;
     padding-left: 15px;
   }
 }
-#sectionFonctionnement .fonctionnement {
+.sectionFonctionnement .fonctionnement {
   display: flex;
   text-align: center;
   width: 85%;
@@ -222,24 +222,24 @@ footer a i {
   background-color: #f6f6f6;
 }
 @media (min-width: 768px) {
-  #sectionFonctionnement .fonctionnement {
+  .sectionFonctionnement .fonctionnement {
     width: 60%;
     margin: 0 0 5% 20px;
   }
 }
 @media (min-width: 1024px) {
-  #sectionFonctionnement .fonctionnement {
+  .sectionFonctionnement .fonctionnement {
     width: 30%;
     height: 75px;
     align-items: center;
   }
 }
-#sectionFonctionnement .fonctionnement .numero {
+.sectionFonctionnement .fonctionnement__numero {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-#sectionFonctionnement .fonctionnement span {
+.sectionFonctionnement .fonctionnement__numero span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -251,20 +251,20 @@ footer a i {
   padding: 4px 8px 4px 8px;
   color: white;
 }
-#sectionFonctionnement .fonctionnement .icone {
+.sectionFonctionnement .fonctionnement__icone {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-right: 20px;
 }
-#sectionFonctionnement .fonctionnement:hover {
+.sectionFonctionnement .fonctionnement:hover {
   background-color: #f5edff;
 }
-#sectionFonctionnement .fonctionnement:hover i {
+.sectionFonctionnement .fonctionnement:hover i {
   color: #9356DC;
 }
 
-#sectionRestaurant {
+.sectionRestaurant {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -273,30 +273,30 @@ footer a i {
   padding: 30px 0 40px 0;
 }
 @media (min-width: 1024px) {
-  #sectionRestaurant {
+  .sectionRestaurant {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
-#sectionRestaurant h1 {
+.sectionRestaurant h1 {
   position: relative;
   top: 0;
   left: -85px;
 }
 @media (min-width: 768px) {
-  #sectionRestaurant h1 {
+  .sectionRestaurant h1 {
     left: 0;
   }
 }
 @media (min-width: 1024px) {
-  #sectionRestaurant h1 {
+  .sectionRestaurant h1 {
     width: 100%;
     text-align: left;
     padding-left: 15px;
   }
 }
-#sectionRestaurant .restaurant {
+.sectionRestaurant .restaurant {
   display: flex;
   justify-content: center;
   width: 90%;
@@ -307,44 +307,44 @@ footer a i {
   border-radius: 20px;
 }
 @media (min-width: 1024px) {
-  #sectionRestaurant .restaurant {
+  .sectionRestaurant .restaurant {
     width: 23%;
   }
-  #sectionRestaurant .restaurant:hover {
+  .sectionRestaurant .restaurant:hover {
     transform: scale(1.05);
   }
 }
-#sectionRestaurant .restaurant a {
+.sectionRestaurant .restaurant a {
   width: 100%;
 }
-#sectionRestaurant .restaurant .restaurant__cadre {
+.sectionRestaurant .restaurant__cadre {
   width: 100%;
   height: 150px;
 }
-#sectionRestaurant .restaurant .restaurant__cadre .restaurant__image {
+.sectionRestaurant .restaurant__cadre .restaurant__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 20px 20px 0 0;
 }
-#sectionRestaurant .restaurant .restaurant__cadre .restaurant__imagePortrait {
+.sectionRestaurant .restaurant__cadre .restaurant__imagePortrait {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 50% 60%;
   border-radius: 20px 20px 0 0;
 }
-#sectionRestaurant .restaurant h2 {
+.sectionRestaurant .restaurant h2 {
   padding: 15px 0 0 10px;
   margin: 0;
   font-weight: bold;
 }
-#sectionRestaurant .restaurant p {
+.sectionRestaurant .restaurant p {
   padding: 5px 0 15px 10px;
   margin: 0;
 }
-#sectionRestaurant .restaurant .restaurant__coeur {
+.sectionRestaurant .restaurant__coeur {
   display: flex;
   position: absolute;
   font-size: 25px;
@@ -352,7 +352,7 @@ footer a i {
   right: 0;
   margin-right: 20px;
 }
-#sectionRestaurant .restaurant .nouveau {
+.sectionRestaurant .restaurant__nouveau {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,21 +393,21 @@ footer a i {
     margin-top: -270px;
   }
 }
-#menu #titreMenu {
+#menu__titre {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 15px;
 }
 @media (min-width: 768px) {
-  #menu #titreMenu {
+  #menu__titre {
     width: 100%;
   }
 }
-#menu #titreMenu h1 {
+#menu__titre h1 {
   font-family: Shrikhand, Arial, sans-serif;
 }
-#menu #titreMenu i {
+#menu__titre i {
   font-size: 25px;
   margin-right: 20px;
 }
@@ -424,32 +424,32 @@ footer a i {
   margin-left: 0;
 }
 @media (min-width: 768px) {
-  #menu .entrees {
+  #menu__entrees {
     width: 30%;
   }
 }
 @media (min-width: 1024px) {
-  #menu .entrees {
+  #menu__entrees {
     width: 32%;
   }
 }
 @media (min-width: 768px) {
-  #menu .plats {
+  #menu__plats {
     width: 30%;
   }
 }
 @media (min-width: 1024px) {
-  #menu .plats {
+  #menu__plats {
     width: 32%;
   }
 }
 @media (min-width: 768px) {
-  #menu .desserts {
+  #menu__desserts {
     width: 30%;
   }
 }
 @media (min-width: 1024px) {
-  #menu .desserts {
+  #menu__desserts {
     width: 32%;
   }
 }
@@ -471,19 +471,19 @@ footer a i {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#menu .cartes .Texte {
+#menu .cartes__texte {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-#menu .cartes .Texte p {
+#menu .cartes__texte p {
   margin: 0;
   font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#menu .cartes .Texte span {
+#menu .cartes__texte span {
   align-items: flex-end;
   font-weight: bold;
   margin-right: 15px;
