@@ -46,6 +46,10 @@
         height: 200px;
     }
 
+    @include desktop{
+        height: 150px;
+    }
+
     &__presentation{
         display: flex;
         flex-direction: column;
@@ -97,6 +101,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         height: 190px;
+        padding: 30px 0 0 0;
     }
     
     h1{
@@ -131,7 +136,8 @@
 
         @include desktop{
             width: 30%;
-            height: 75px;
+            height: 35px;
+            margin-bottom: 5%;
             align-items: center;
         }
 

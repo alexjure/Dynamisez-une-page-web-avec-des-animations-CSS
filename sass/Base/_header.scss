@@ -7,11 +7,11 @@ header{
     img{
         display: flex;
         width: 50%;
-        margin: 5% auto;
+        margin: 2% auto;
         align-items: center;
 
         @include tablette{
-            width: 30%;
+            width: 25%;
         }
         @include desktop{
             width: 25%;

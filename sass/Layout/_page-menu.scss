@@ -4,11 +4,14 @@
     
     img{
         width: 100%; 
+        object-fit: cover;
+        object-position: center;
+        height: 400px;
     }
 
 }
 
-#menu{
+.menu{
     position: relative;
     z-index: 2;
     display: flex;
@@ -23,7 +26,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0 4% 4% 4%;
-        margin-top: -270px;
     }
 
         &__titre{
@@ -61,7 +63,7 @@
         
         &__entrees{
             @include tablette{
-                width: 30%;
+                width: 46%;
             }
 
             @include desktop{
@@ -71,7 +73,7 @@
         
         &__plats{
             @include tablette{
-                width: 30%;
+                width: 46%;
             }
 
             @include desktop{
@@ -81,7 +83,7 @@
 
         &__desserts{
             @include tablette{
-                width: 30%;
+                width: 46%;
             }
 
             @include desktop{
@@ -99,6 +101,7 @@
             padding: 10px;
             border-radius: 15px;          
             cursor: pointer;
+            
         
             h3{
                 margin: 0 0 8px 0;
