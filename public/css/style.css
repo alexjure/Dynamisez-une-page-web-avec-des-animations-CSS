@@ -33,13 +33,17 @@ a {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 1;
+  animation: fondu;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 .chargement .loader {
   width: 200px;
   height: 200px;
   border-top: 6px solid #9356DC;
   border-radius: 50%;
-  animation: loader 1s linear infinite;
+  animation: loader 5s forwards;
 }
 @keyframes loader {
   0% {
@@ -50,8 +54,80 @@ a {
     display: none;
   }
 }
+@keyframes fondu {
+  0% {
+    opacity: 0.95;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 /* Coeur */
+.restaurant__coeur {
+  color: B2B2B2;
+  cursor: pointer;
+}
+
+.lienCoeur:hover i, .lienCoeur:active i, .lienCoeur:focus i {
+  -webkit-animation: fa-heart 2s;
+  animation: fa-heart 1s;
+  background: linear-gradient(-7deg, #9356DC 4%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@-webkit-keyframes fa-heart {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fa-heart {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header {
   display: flex;
   flex-direction: row-reverse;
@@ -492,8 +568,7 @@ footer a i {
   }
 }
 .menu .cartes {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   background-color: white;
   box-shadow: 10px 10px 10px #e5e5e5;
   height: auto;
@@ -525,6 +600,33 @@ footer a i {
   align-items: flex-end;
   font-weight: bold;
   margin-right: 15px;
+}
+.menu .cartes__validation {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 55px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+}
+.menu .cartes__validation span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.menu .cartes__validation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  color: #99E2D0;
+  font-weight: bold;
 }
 .menu .bouton {
   display: flex;
