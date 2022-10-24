@@ -576,6 +576,7 @@ footer a i {
   padding: 10px;
   border-radius: 15px;
   cursor: pointer;
+  z-index: 5;
 }
 .menu .cartes h3 {
   margin: 0 0 8px 0;
@@ -601,7 +602,10 @@ footer a i {
   font-weight: bold;
   margin-right: 15px;
 }
-.menu .cartes__validation {
+.menu .cartes .fa-check {
+  display: none;
+}
+.menu .cartes:hover .cartes__validation {
   position: absolute;
   display: flex;
   top: 0;
@@ -610,14 +614,15 @@ footer a i {
   width: 55px;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
+  animation: transition 1s;
 }
-.menu .cartes__validation span {
+.menu .cartes:hover .cartes__validation span {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.menu .cartes__validation i {
+.menu .cartes:hover .cartes__validation span i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -627,6 +632,25 @@ footer a i {
   background-color: white;
   color: #99E2D0;
   font-weight: bold;
+  animation: rotation 1s;
+  visibility: visible;
+}
+@keyframes transition {
+  from {
+    transform: translate(75px);
+    z-index: 1;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes rotation {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -720deg;
+  }
 }
 .menu .bouton {
   display: flex;
