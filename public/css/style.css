@@ -28,7 +28,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
@@ -37,6 +39,7 @@ a {
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  transform: translate(-50%, -50%);
 }
 .chargement .loader {
   width: 200px;
@@ -87,12 +90,34 @@ a {
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
+}
+
+/* Apparition */
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu__entrees {
+  animation: apparition 1200ms backwards 300ms;
+}
+
+.menu__plats {
+  animation: apparition 1200ms backwards 600ms;
+}
+
+.menu__desserts {
+  animation: apparition 1200ms backwards 900ms;
 }
 
 /* Coeur */
 .restaurant__coeur {
-  color: B2B2B2;
+  color: #B2B2B2;
   cursor: pointer;
 }
 
@@ -128,6 +153,47 @@ a {
     opacity: 1;
   }
 }
+/*Checkbox*/
+.cartes__validation {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 100%;
+  margin: -12px 0 0 0;
+  border-radius: 0 15px 15px 0;
+  position: absolute;
+  right: -80px;
+  top: 12px;
+  transition-duration: 750ms;
+  visibility: hidden;
+}
+.cartes__validation i {
+  color: #99E2D0;
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 500ms 250ms;
+  transform: rotate(0deg);
+}
+.cartes:hover .cartes__texte span {
+  margin-right: 80px;
+  transition-duration: 750ms;
+}
+.cartes:hover .cartes__validation {
+  right: 0;
+  visibility: visible;
+}
+.cartes:hover .cartes__validation i {
+  transform: rotate(360deg);
+}
+
 header {
   display: flex;
   flex-direction: row-reverse;
@@ -601,56 +667,6 @@ footer a i {
   align-items: flex-end;
   font-weight: bold;
   margin-right: 15px;
-}
-.menu .cartes .fa-check {
-  display: none;
-}
-.menu .cartes:hover .cartes__validation {
-  position: absolute;
-  display: flex;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 55px;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
-  animation: transition 1s;
-}
-.menu .cartes:hover .cartes__validation span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.menu .cartes:hover .cartes__validation span i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: white;
-  color: #99E2D0;
-  font-weight: bold;
-  animation: rotation 1s;
-  visibility: visible;
-}
-@keyframes transition {
-  from {
-    transform: translate(75px);
-    z-index: 1;
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes rotation {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: -720deg;
-  }
 }
 .menu .bouton {
   display: flex;
