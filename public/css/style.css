@@ -159,15 +159,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55px;
+  width: 25px;
   height: 100%;
   margin: -12px 0 0 0;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 20px 20px 0;
   position: absolute;
   right: -80px;
   top: 12px;
+  z-index: 1;
   transition-duration: 750ms;
-  visibility: hidden;
 }
 .cartes__validation i {
   color: #99E2D0;
@@ -178,19 +178,24 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: white;
   transition: transform 500ms 250ms;
   transform: rotate(0deg);
 }
+.cartes:hover .cartes__texte h3 {
+  margin-right: 60px;
+}
 .cartes:hover .cartes__texte span {
-  margin-right: 80px;
+  margin-right: 75px;
   transition-duration: 750ms;
 }
 .cartes:hover .cartes__validation {
+  width: 60px;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
   right: 0;
-  visibility: visible;
 }
 .cartes:hover .cartes__validation i {
+  background-color: white;
   transform: rotate(360deg);
 }
 
@@ -242,29 +247,6 @@ header #retour i {
 .btn:hover {
   background: linear-gradient(#FF9EE4, #A15DF2);
   box-shadow: 3px 3px 10px #7a7a7a;
-}
-
-footer {
-  background: #363636;
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 30px 20px;
-}
-footer h3 {
-  color: white;
-  font-family: Shrikhand, Arial, sans-serif;
-  font-size: 15px;
-  padding: 10px 0 10px 0;
-}
-footer a {
-  color: white;
-  padding-bottom: 10px;
-}
-footer a i {
-  width: 10px;
-  padding-right: 10px;
-  font-size: 12px;
-  margin: 0;
 }
 
 .sectionLocalisation {
@@ -642,6 +624,7 @@ footer a i {
   padding: 10px;
   border-radius: 15px;
   cursor: pointer;
+  overflow: hidden;
   z-index: 5;
 }
 .menu .cartes h3 {
@@ -683,6 +666,29 @@ footer a i {
   .menu .bouton {
     margin-top: 40px;
   }
+}
+
+footer {
+  background: #363636;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 30px 20px;
+}
+footer h3 {
+  color: white;
+  font-family: Shrikhand, Arial, sans-serif;
+  font-size: 15px;
+  padding: 10px 0 10px 0;
+}
+footer a {
+  color: white;
+  padding-bottom: 10px;
+}
+footer a i {
+  width: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

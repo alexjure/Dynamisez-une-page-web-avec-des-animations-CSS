@@ -148,26 +148,25 @@
     opacity: 1;
   }
 }
-
 /*Checkbox*/
 
 .cartes{
-
+  
   &__validation{
     background-color: $tertiary-color;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 55px;
+    width: 25px;
     height: 100%;
     margin: -12px 0 0 0;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 20px 20px 0;
     position: absolute;
     right: -80px;
     top: 12px;
+    z-index: 1;
     transition-duration: 750ms;
-    visibility: hidden;
-    
+
     i{
       color: $tertiary-color;
       font-size: 15px;
@@ -177,28 +176,35 @@
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-      background-color: white;
       transition: transform 500ms 250ms;
       transform: rotate(0deg);
     }
-    
   }
 
   &:hover{
+
     .cartes__texte{
+
+      h3{
+        margin-right: 60px;
+      }
+
       span{
-        margin-right: 80px;
+        margin-right: 75px;
         transition-duration: 750ms;
       }
     }
-
+    
     .cartes__validation{
-        right: 0;
-        visibility: visible;
-        i{
-          transform: rotate(360deg);
-        }
-        
+      width: 60px;
+      height: 100%;
+      border-radius: 0 15px 15px 0;
+      right: 0;
+
+      i{
+        background-color: white;
+        transform: rotate(360deg);
+      }
     }
-  }
+  } 
 }
