@@ -10,7 +10,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
     animation: fondu;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     transform: translate(-50%, -50%);
@@ -20,14 +20,12 @@
       height: 200px;
       border-top: 6px solid $primary-color;
       border-radius: 50%;
-      animation: loader 5s forwards;
-  
+      animation: loader 2s linear;
     }
   
     @keyframes loader {
       0% {
         transform: rotate(0deg);
-  
       }
       100% {
         transform: rotate(720deg);
@@ -107,8 +105,6 @@
   animation: apparition 1200ms backwards 900ms;
 }
 
-
-
 /* Coeur */
 
 .restaurant__coeur{
@@ -137,6 +133,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fa-heart{
   0%{
     opacity: 0.1;
@@ -148,10 +145,11 @@
     opacity: 1;
   }
 }
+
 /*Checkbox*/
 
 .cartes{
-  
+
   &__validation{
     background-color: $tertiary-color;
     display: flex;
@@ -184,14 +182,11 @@
   &:hover{
 
     .cartes__texte{
-
-      h3{
-        margin-right: 60px;
-      }
-
+      
       span{
         margin-right: 75px;
         transition-duration: 750ms;
+        transition-property: margin-right ease-in-out;
       }
     }
     

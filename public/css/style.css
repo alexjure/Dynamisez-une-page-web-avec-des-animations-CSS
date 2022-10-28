@@ -36,7 +36,7 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 1;
   animation: fondu;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   transform: translate(-50%, -50%);
@@ -46,7 +46,7 @@ a {
   height: 200px;
   border-top: 6px solid #9356DC;
   border-radius: 50%;
-  animation: loader 5s forwards;
+  animation: loader 2s linear;
 }
 @keyframes loader {
   0% {
@@ -181,12 +181,10 @@ a {
   transition: transform 500ms 250ms;
   transform: rotate(0deg);
 }
-.cartes:hover .cartes__texte h3 {
-  margin-right: 60px;
-}
 .cartes:hover .cartes__texte span {
   margin-right: 75px;
   transition-duration: 750ms;
+  transition-property: margin-right ease-in-out;
 }
 .cartes:hover .cartes__validation {
   width: 60px;
@@ -272,7 +270,7 @@ header #retour i {
 .sectionLocalisation__localisation form input {
   border: none;
   background-color: #eaeaea;
-  padding: 4px 0px 4px 15px;
+  padding: 4px 0 4px 15px;
   margin: 5px 0 5px 0;
 }
 .sectionLocalisation__localisation form ::placeholder {

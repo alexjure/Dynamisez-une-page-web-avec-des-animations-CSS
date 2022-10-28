@@ -8,7 +8,6 @@
         object-position: center;
         height: 400px;
     }
-
 }
 
 .menu{
@@ -103,7 +102,6 @@
             overflow: hidden;
             z-index: 5;
             
-        
             h3{
                 margin: 0 0 8px 0;
                 font-size: 15px;
@@ -122,8 +120,7 @@
                     font-size: 12px;
                     white-space: nowrap;
                     overflow: hidden;
-                    text-overflow: ellipsis;
-                    
+                    text-overflow: ellipsis;  
                 }
         
                 span{
@@ -131,9 +128,7 @@
                     font-weight: bold;
                     margin-right: 15px;
                 }
-            }
-
-            
+            }      
         }
     
     .bouton{
@@ -150,7 +145,6 @@
             margin-top: 40px;
         }
     }
-
 }
 
 
