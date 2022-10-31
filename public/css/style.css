@@ -184,7 +184,7 @@ a {
 .cartes:hover .cartes__texte span {
   margin-right: 75px;
   transition-duration: 750ms;
-  transition-property: margin-right ease-in-out;
+  transition-property: margin-right;
 }
 .cartes:hover .cartes__validation {
   width: 60px;
@@ -532,7 +532,17 @@ header #retour i {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  height: 400px;
+  height: 200px;
+}
+@media (min-width: 768px) {
+  #imageFond img {
+    height: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  #imageFond img {
+    height: 400px;
+  }
 }
 
 .menu {
@@ -628,9 +638,7 @@ header #retour i {
 .menu .cartes h3 {
   margin: 0 0 8px 0;
   font-size: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 85%;
 }
 .menu .cartes__texte {
   display: flex;
@@ -645,6 +653,7 @@ header #retour i {
   text-overflow: ellipsis;
 }
 .menu .cartes__texte span {
+  height: 100%;
   align-items: flex-end;
   font-weight: bold;
   margin-right: 15px;
